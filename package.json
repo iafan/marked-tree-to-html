@@ -29,7 +29,11 @@
     "html",
     "extension"
   ],
-  "author": "",
+  "author": "Igor Afanasyev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iafan/marked-tree-to-html.git"
+  },
   "license": "Unlicense",
   "peerDependencies": {
     "marked": ">=4.0.0",
