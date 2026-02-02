@@ -5,6 +5,9 @@ import { renderTree } from 'tree-to-html'
  * Check if a code block contains ASCII tree characters.
  */
 export function isTreeStructure(code: string): boolean {
+  // Box drawing with top-left corner indicates a box/table, not a tree
+  if (code.includes('┌')) return false
+
   const hasBranch = code.includes('├')
   const hasCorner = code.includes('└')
   const hasDash = code.includes('─')
