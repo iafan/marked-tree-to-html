@@ -7,6 +7,8 @@ import { renderTree } from 'tree-to-html'
 export function isTreeStructure(code: string): boolean {
   // Box drawing with top-left corner indicates a box/table, not a tree
   if (code.includes('┌')) return false
+  // Right-T (┤) or arrows (─►, ◄─) indicate a flow diagram, not a tree
+  if (code.includes('┤') || code.includes('─►') || code.includes('◄─')) return false
 
   const hasBranch = code.includes('├')
   const hasCorner = code.includes('└')
