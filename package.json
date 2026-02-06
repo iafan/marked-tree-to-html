@@ -1,6 +1,6 @@
 {
   "name": "marked-tree-to-html",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Marked extension for rendering ASCII tree structures as HTML",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -37,7 +37,7 @@
   "license": "Unlicense",
   "peerDependencies": {
     "marked": ">=4.0.0",
-    "tree-to-html": ">=1.0.0"
+    "tree-to-html": ">=1.0.1"
   },
   "devDependencies": {
     "marked": "^17.0.1",
